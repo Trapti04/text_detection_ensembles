@@ -1,0 +1,12 @@
+.vscode
+/__pycache__
+settings.json
+<<<<<<< HEAD
+*.pyc
+=======
+<<<<<<< HEAD
+=======
+*.pyc
+*.json
+>>>>>>> ea5e41d7a9fd3661f7c725f1a6b7927bc02ec7fe
+>>>>>>> 81ecc92976d54ef63e7b03f82b988bcefecd0fcb

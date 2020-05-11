@@ -1,0 +1,12 @@
+a simple and quite portable solution (but could choke on special filename cases... a more robust one could be cooked up if you have a recent version of GNU xargs and find):
+-------------------------------------------------------------------------------------------------
+find . \( -name '*(*' -o -name '*)*' \) -print > ze_list
+while read a_line ; do 
+   echo mv "$a_line" "$(echo "$a_line" | sed -e 's/(/0000/g' -e 's/)/1111/g')" ; 
+done < ze_list
+------------------------------------------------------------------------------------------------------
+Then if you are confident it would do what you want, take out the 'echo' and use sudo before mv command.
+
+(don't worry as the shell is hiding the surrounding quotes (") when using echo, but they will be there to ensure "mv" receives 2 arguments only, a source, and a destination.)
+
+the "$(....|....)" is where the replacement appears. The surrounding quotes are important so that the resulting name, even if it contains spaces, will still be considered one (1) argument.
