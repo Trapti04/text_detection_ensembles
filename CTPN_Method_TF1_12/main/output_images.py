@@ -9,8 +9,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-DATA_FOLDER = "/data/res/"
-RES_FOLDER = "/data/res_image/" 
+DATA_FOLDER = "/data/res/res1"
+RES_FOLDER = "/data/res_image/res_image1/" 
 cur_dir =os.getcwd()
 
 def get_training_data():

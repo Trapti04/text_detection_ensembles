@@ -13,8 +13,10 @@ from nets import model_train as model
 from utils.rpn_msr.proposal_layer import proposal_layer
 from utils.text_connector.detectors import TextDetector
 
-tf.app.flags.DEFINE_string('test_data_path', 'data/demo/', '')
-tf.app.flags.DEFINE_string('output_path', 'data/res/', '')
+#tf.app.flags.DEFINE_string('test_data_path', 'data/demo/', '')
+#tf.app.flags.DEFINE_string('output_path', 'data/res/', '')
+tf.app.flags.DEFINE_string('test_data_path', 'data/demo/white_space_samples/', '')
+tf.app.flags.DEFINE_string('output_path', 'data/res/res1/', '')
 tf.app.flags.DEFINE_string('gpu', '0', '')
 tf.app.flags.DEFINE_string('checkpoint_path', 'checkpoints_mlt/', '')
 FLAGS = tf.app.flags.FLAGS
