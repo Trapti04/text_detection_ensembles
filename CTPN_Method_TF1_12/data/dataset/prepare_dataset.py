@@ -13,7 +13,7 @@ import sys
 
 
 def get_data():
-    home_path = "/home/trapti_kalra/receipt-processing/CTPN_Method_TF1_12/data/dataset/"
+    home_path = "/home/ubuntu/text_detection_ensembles/CTPN_Method_TF1_12/data/dataset/"
     filenames = [os.path.splitext(os.path.basename(f))[0] for f in glob.glob(home_path + "original/*.jpg")]
     
     jpg_files = [s + ".jpg" for s in filenames]

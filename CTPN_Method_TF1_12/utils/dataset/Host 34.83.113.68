@@ -1,7 +1,0 @@
-Host 34.83.113.68
-  HostName 34.83.113.68
-  LogLevel verbose
-  IdentityFile C:\Users\user\gcp_private_converted
-  Port 22
-  User trapti_kalra
-  ForwardX11 yes

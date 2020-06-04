@@ -9,7 +9,7 @@ import matplotlib
 #    print('no display found. Using non-interactive Agg backend')
 #   matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-import matplotlib.pyplot as plt
+
 import numpy as np
 
 #from utils.dataset.data_util import GeneratorEnqueuer
@@ -72,8 +72,8 @@ def generator(vis=False):
                 if vis:
                     for p in bbox:
                         cv2.rectangle(im, (p[0], p[1]), (p[2], p[3]), color=(0, 0, 255), thickness=1)
-                    #my_dir = os.getcwd() + TEST_FOLDER # code to print im as display not working
-                    #cv2.imwrite((my_dir + fn + '_myimg.jpg'), im) # as above
+                    my_dir = os.getcwd() + TEST_FOLDER # code to print im as display not working
+                    cv2.imwrite((my_dir + fn + '_bbimg.jpg'), im) # as above
                     #fig, axs = plt.subplots(1, 1, figsize=(30, 30))
                     #axs.imshow(im[:, :, ::-1])
                     #axs.set_xticks([])
@@ -91,7 +91,7 @@ def generator(vis=False):
 def get_batch(num_workers, **kwargs):
     try:
         enqueuer = GeneratorEnqueuer(generator(**kwargs), use_multiprocessing=True)
-        enqueuer.start(max_queue_size=24, workers=num_workers)
+        enqueuer.start(max_queue_size=12, workers=num_workers) #24
         generator_output = None
         while True:
             while enqueuer.is_running():

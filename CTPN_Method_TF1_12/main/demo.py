@@ -4,7 +4,7 @@ import shutil
 import sys
 import time
 
-import cv2
+from cv2 import cv2
 import numpy as np
 import tensorflow as tf
 
@@ -23,7 +23,7 @@ FLAGS = tf.app.flags.FLAGS
 def get_images():
     files = []
     exts = ['jpg', 'png', 'jpeg', 'JPG']
-    for parent, dirnames, filenames in os.walk(FLAGS.test_data_path):
+    for parent, _ , filenames in os.walk(FLAGS.test_data_path):
         for filename in filenames:
             for ext in exts:
                 if filename.endswith(ext):
