@@ -1,6 +1,6 @@
 # Connectionist Text Proposal Network
 
-This is a tensorflow implementation of [CTPN](https://arxiv.org/abs/1609.03605) by @tianzhi0549 and @varun-suresh. Many thanks to their great work and pre-trained models, and the original repository can be found [here](https://github.com/tianzhi0549/CTPN.git). More detail of set-up and training process can be found in their [documentation](https://github.com/tianzhi0549/CTPN/blob/master/README.md). Here we document how we used this work to solve task 1.
+This is  modified code from the tensorflow implementation of [CTPN](https://arxiv.org/abs/1609.03605) by @tianzhi0549 and @varun-suresh. Many thanks to their great work and pre-trained models, and the original repository can be found [here](https://github.com/tianzhi0549/CTPN.git). More detail of set-up and training process can be found in their [documentation](https://github.com/tianzhi0549/CTPN/blob/master/README.md). Here we document how we used this work to solve task 1.
 
 ## Introduction
 
