@@ -90,5 +90,3 @@ Some critical arguments:
 - `checkponit_path`: The path to the directory containing the trained model.
 - `input_files`: The path to the directory containing the test images.
 
-## Contact
-Feel free to contact me (Ba-Hien TRAN) if you have any questions, either by [email](bahientranvn) or by issue.
